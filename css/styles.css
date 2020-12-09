@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #f2f2f2;
+    --black: #222;
+    --light-blue: #b9d6f2;
+    --dark-blue: #061a40;
+    --dull-green: #426b69;
+    --mid-green: #59a96a;
+    --light-green: #cbefb6;
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url(../fonts/nunito/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito-ExtraBold';
+    src: url(../fonts/nunito/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'CarterOne';
+    src: url(../fonts/CarterOne-Regular.ttf);
+}
+
+body {
+    font-family: 'Nunito-Regular';
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    background: var(--dark-blue);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline;padding: 15px 10px;
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--white);
+    padding: 5px 10px; 
+    border-radius: 0 20px 0 20px;
+}
+
+nav a:hover {
+    font-family: 'Nunito-ExtraBold';
+    background: var(--white);
+    color: var(--dull-green);
+    border-top: 5px solid var(--mid-green);
+    border-bottom: 1px dotted var(--dull-green);
+}
+
+h1 {
+    font-family: 'CarterOne';
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    color: var(--dark-blue);
+}
+
+#home, #about, #my-work, #contact {
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =================================================================================
+Home Page Styling================================================================ */
+#home {
+    background: url("../img/qbkls.png");
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home section {
+    text-align: center;    
+    padding-left: 20px;
+}
+
+/* Begin Animated Logo=============================================================================== */
+#animated-logo {
+    background: var(--white);
+    width: 500px;
+    position: relative;
+    display: flex;
+    padding: 0 15px 15px 0;
+    box-shadow: 0 0 8px 10px rgba(6,26,64,.05);
+}
+
+.letter-a {
+    background: var(--mid-green);
+    justify-content: right;
+}
+
+.letter-p {
+    background: var(--dark-blue);
+}
+
+.letter-h {
+    background: var(--dull-green);
+    justify-content: left;
+}
+
+.letter-a, .letter-p, .letter-h {
+    color: var(--light-green);
+    font-size: 1.5rem;
+    height: 70px;
+    margin-top: 25px;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.a-middle, .h-middle {
+    height: 140px;
+}
+
+.p-middle1 {
+    align-items: flex-end;
+}
+
+.p-middle2 {
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+/* Transition Animated Logo======================================================================== */
+#animated-logo {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+div .letter-a p, div .letter-p p, div .letter-h p {
+    display: none;
+}
+
+div .a-top {
+    width: 173px;
+    height: 32px;
+    position: absolute;
+    top: 77px;
+    left: 89px;
+    transform: rotate(-33deg) skew(26deg, 3deg);
+}
+
+div .a-middle {
+    width: 189px;
+    height: 32px;
+    position: absolute;
+    top: 72px;
+    left: 223px;
+    transform: rotate(33deg) skew(-29deg, -3deg);
+}
+
+div .a-bottom {
+    width: 189px;
+    height: 28px;
+    position: absolute;
+    top: 101px;
+    left: 122px;
+    transform: skew(58deg, -0deg);
+}
+
+div .p-top {
+    width: 189px;
+    height: 32px;
+    position: absolute;
+    top: 176px;
+    left: 74px;
+    transform: rotate(33deg) skew(33deg, -3deg);
+}
+
+div .p-middle1 {
+    width: 189px;
+    height: 32px;
+    position: absolute;
+    top: 250px;
+    left: 73px;
+    transform: rotate(33deg) skew(33deg, -3deg);
+}
+
+div .p-middle2 {
+    width: 189px;
+    height: 32px;
+    position: absolute;
+    top: 239px;
+    left: 7px;
+    transform: rotate(93deg) skew(-26deg, -3deg);
+}
+
+div .p-bottom {
+    width: 112px;
+    height: 33px;
+    position: absolute;
+    top: 249px;
+    left: 177px;
+    transform: rotate(93deg) skew(-26deg, -3deg);
+}
+
+div .h-top {
+    width: 189px;
+    height: 31px;
+    position: absolute;
+    top: 215px;
+    left: 304px;
+    transform: rotate(93deg) skew(32deg, -3deg);
+}
+
+div .h-middle {
+    width: 189px;
+    height: 31px;
+    position: absolute;
+    top: 290px;
+    left: 170px;
+    transform: rotate(93deg) skew(32deg, -3deg);
+}
+div .h-bottom {
+    width: 185px;
+    height: 34px;
+    position: absolute;
+    top: 249px;
+    left: 239px;
+    transform: rotate(-26deg) skew(-26deg, -3deg);
+}
+
+/* End Animated Logo=============================================================================== */
+
+
+
+/* =================================================================================
+About Page Styling=============================================================== */
+
+#about {
+    background: var(--light-blue);
+    border-top: 1px solid var(--dark-blue);
+    background-image: url("../img/gdnt-bdr.png");
+    background-repeat: repeat-x;
+}
+
+.about-content {
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.self-title {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px dotted var(--dull-green);
+    border-radius: 0 0 30px 0;
+}
+
+.self-title h2 {
+    font-family: 'CarterOne';
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    color: var(--dull-green);
+    margin: 0 0 15px 30px;
+}
+
+.self-title img {
+    width: 350px;
+    border-radius: 0 0 30px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding: 0 15px;
+}
+
+.about-content section {
+    background-color: var(--white);
+    border-radius: 0 30px 0 30px;
+    padding: 15px;
+    border-top: 13px solid var(--dull-green);
+    border-bottom: 2px dotted var(--dull-green);
+}
+
+.about-content h3 {
+    font-family: 'Nunito-ExtraBold';
+    color: var(--dull-green);
+    margin-top: 30px;
+}
+
+.about-content p {
+    color: var(--dull-green);
+}
+
+.about-content section p {
+    padding: 15px;
+}
+
+.abt-btn {
+    position: relative;
+}
+
+.abt-btn a {
+    position: absolute;
+    top: -13px;
+    right: 0;
+    background: var(--light-green);
+    color: var(--dull-green);
+    padding: 7px 10px;
+    border-top: 13px solid var(--dull-green);
+    border-bottom: 2px dotted var(--dull-green);
+    border-radius: 0 30px 0 30px;
+}
+
+.abt-btn a:hover {
+    background: var(--white);
+    color: var(--dark-blue);
+    border-top: 13px solid var(--dark-blue);
+    border-bottom: 2px dotted var(--dark-blue);
+}
+
+/* =================================================================================
+My Work Page Styling============================================================= */
+
+#my-work {
+    background: var(--light-green);
+    color: var(--dark-blue);
+    border-top: 1px solid var(--dark-blue);
+    background-image: url("../img/gdnt-bdr.png");
+    background-repeat: repeat-x;
+}
+
+.work-title {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px dotted var(--dark-blue);
+    border-radius: 0 0 30px 0;
+}
+
+.work-title h2 {
+    font-family: 'CarterOne';
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    color: var(--dark-blue);
+    margin: 0 0 15px 30px;
+}
+
+.work-logo {
+    position: relative;
+    right: -5px;
+}
+
+.work-websites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    padding: 0 15px;
+}
+
+.work-websites section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    background: var(--white);
+    border-radius: 0 30px 0 30px;
+    border-top: 13px solid var(--dark-blue);
+    border-bottom: 2px dotted var(--dark-blue);
+}
+
+.website-info {
+    margin-right: 30px;
+}
+
+.website-info h3 {
+    margin-top: 30px;
+}
+
+.website-info p {
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.website-preview img {
+    width: 100%;
+    margin: 0 15px;
+    position: relative;
+    right: 15px;
+    border:3px solid var(--dark-blue);
+    border-radius: 0 30px 0 30px;
+}
+
+.website-preview a {
+    font-family: 'Nunito-ExtraBold';
+    position: absolute;
+    top: -13px;
+    right: 0;
+    background: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 7px 10px;
+    border-top: 13px solid var(--dark-blue);
+    border-bottom: 2px dotted var(--dark-blue);
+    border-radius: 0 30px 0 30px;
+}
+
+.website-preview a:hover {
+    background: var(--white);
+    color: var(--dull-green);
+    border-top: 13px solid var(--dull-green);
+    border-bottom: 2px dotted var(--dull-green);
+}
+
+
+/* =================================================================================
+Contact Page Styling============================================================= */
+
+#contact {
+    background: var(--dull-green);
+    color: var(--white);
+    border-top: 1px solid var(--dark-blue);
+    background-image: url("../img/gdnt-bdr.png");
+    background-repeat: repeat-x;
+    padding: 0;
+}
+
+#contact div {
+    background: url(../img/qbkls-green.png);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background: var(--dark-blue);
+    color: var(--white);
+    height: 90px;
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links a {
+    color: var(--white);
+}
+
+.links p {
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 15px 0 0;
+    padding: 5px;
+}
+
+.links a img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.links p:hover {
+    color: var(--white);
+}
+
+img[alt="GitHub Button"] {
+    border-radius: 5px;
+    background: var(--white);
+}
+
+img[alt="CodePen Button"] {
+    border-radius: 50%;
+    background: var(--white);
+}
+
+
+/* ===================================================================================
+Media Queries ========================================================================
+=================================================================================== */
+
+@media screen and (max-width: 1150px) {
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .work-websites {
+        grid-template-columns: 1fr;
+    }
+    
+        footer {
+            padding-top: 5px;
+            display: block;
+            height: auto;
+            text-align: center;
+        }
+
+        .links {
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 620px) {
+    #home {
+        display: none;
+    }
+    
+    .self-title img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+}
