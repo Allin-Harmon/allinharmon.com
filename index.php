@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Allin Harmon's Web Development Portfolio">
+    <meta name="keywords" content="Allin, Harmon, Web Design, HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Allin Paul Harmon">
+    <meta name="google-site-verification" content="xxGk4-rb4hfEsTBvgYVbEzyys50r_YlmGlmjxBDVYuU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>Allin Harmon's Portfolio Site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <div class="home-link">
+                    <a href="#home"><img
+                    src="img/my-logo.svg" 
+                    alt="Allin Harmon's Logo"
+                    height="40"/></a>
+                    <p>ALLIN PAUL HARMON</p>
+                </div>
+
+                <div class="about-link">
+                    <a href="#about"><img
+                        src="img/my-logo.svg" 
+                        alt="Allin Harmon's Logo"
+                        height="40"/></a>
+                    <p>ALLIN PAUL HARMON</p>
+                </div>
+            </div>
+
+            <ul>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#my-work"><li>My Work</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+    <article id="home" class="bg-pan-top">
+
+            <section id="home-info">
+                <h2>Logo Using Only HTML, CSS, and JavaScript</h2>
+                <p>Using the inspector tool and hovering over the elements in the DOM, you can see that this was created with simple divs in HTML. The divs were then manipulated by the CSS Transform and Animation Properties. Finally, the change is triggered using JavaScript. Click the button to see it change.</p>
+                <button class="shake-horizontal" onclick="changeLogo()">Click Here</button>
+            </section>
+
+            <section id="animated-logo" class="logo">
+
+                <div>
+                    <div class="letter-a a-top"><p>Allin</p></div>
+                    <div class="letter-a a-middle"><p>Putting</p></div>
+                    <div class="letter-a a-bottom"><p>HTML</p></div>
+                </div>
+
+                <div>
+                    <div class="letter-p p-top"><p>Paul</p></div>
+                    <div class="letter-p p-middle1"><p>Front-End</p></div>
+                    <div class="letter-p p-middle2"><p>Web Development</p></div>
+                    <div class="letter-p p-bottom"><p>CSS</p></div>
+                </div>
+
+                <div>
+                    <div class="letter-h h-top"><p>Harmon</p></div>
+                    <div class="letter-h h-middle"><p>Together</p></div>
+                    <div class="letter-h h-bottom"><p>JavaScript</p></div>
+                </div>
+
+            </section>
+
+        </article>
+
+        <article id="about">
+
+            <section>
+
+                <section class="self-title">
+                    <h2>About Me</h2>
+                    <img src="img/me2.png" alt="A photo of me">
+                </section>
+                
+                <section class="about-content">
+
+                    <section class="abt-btn">
+                        <h3>My Experience</h3>
+                        <p>I have and solid understanding of HTML and CSS. I am learning to master JavaScript. I am proficient in Adobe Photoshop, Illustrator and In Design. I have been a Front-End Web Developer, a Graphic Designer, and a Soldier among other things. Take a look at my resume to find out more.</p>
+                        <a href="allin-harmon-resume.pdf" target="_blank">Download My R‌esum‌e</a>
+                    </section>
+
+                    <section>
+                        <h3>My Education</h3>
+                        <p> I graduated from the Art Institute of Atlanta, Summa cum Laude, with a Batchelor of Arts in Advertising in 2012. After graduating, I used my remaining credit from my GI Bill to take a lot of Web Design classes and fell in love. In 2020, I graduated from the Code Boot Camp at <a href="https://www.theclubhou.se/" target="_blank">The Clubhou.se</a>.</p>
+                    </section>
+    
+                    <section>
+                        <h3>My Military Experience</h3>
+                        <p>I served in the US Army on active duty from June 2006 to November 2009. After my time on active duty, I was in the Army Reserves. I received an Honorable discharge in May 2014. Serving my country helped me become more disciplined and better able to complete difficult tasks.</p>
+                    </section>
+    
+                    <section class="abt-btn">
+                        <h3>My Passions</h3>
+                        <p>In addition to my love for coding, I also love graphic design, photo manipulation, building computers and video games. They all feed into my love for puzzle solving. I love to solve problems. The more difficult the problem, the greater the feeling of euphoria when I solve it.</p>
+                        <a href="sample_website/design_portfolio/index.html" target="_blank">See My Design Portfolio</a>
+                    </section>
+
+                </section>
+
+            </section>
+
+        </article>
+
+        <article id="my-work">
+
+            <section>
+
+                <section class="work-title">
+                    <h2>My Work</h2>
+                    <img
+                        class="work-logo"
+                        src="img/my-logo.svg" 
+                        alt="Allin Harmon's Logo"
+                        height="80"/>
+                </section>
+
+                <section class="work-websites">
+                    
+                    <section id="alaska">
+    
+                        <div class="website-info">
+                            <h3>Alaska Website</h3>
+                            <p>This was a voluntary Code Boot Camp project to help me improve my HTML and CSS skills. I also used all original photos taken during a cruise through Alaska with my wife. It is a responsive site using grid CSS and it looks as good on a phone as it does on a monitor. </p>
+                        </div>
+    
+                        <div class="website-preview">
+                            <img src="img/alaska-thumb.jpg" alt="Screenshot of Alaska Website">
+                            <a href="sample_website/alaska_website/index.html" target="_blank">Click here to see the live site</a>
+                        </div>
+    
+                    </section>
+    
+                    <section id="moneybags">
+    
+                        <div class="website-info">
+                            <h3>Moneybags Website</h3>
+                            <p>This was also a voluntary Code Boot Camp project. We were given a screenshot and told to recreate the site from provided images. I rebuilt the website while adding responsiveness. I also filled in a few areas of the site with new content that matched and improved the overall theme.</p>
+                        </div>
+    
+                        <div class="website-preview">
+                            <img src="img/moneybags-thumb.jpg" alt="Screenshot of Moneybags Website">
+                            <a href="sample_website/moneybags/index.html" target="_blank">Click here to see the live site</a>
+                        </div>
+    
+                    </section>
+    
+                    <section id="sms">
+    
+                        <div class="website-info">
+                            <h3>Sellers Marketing Solutions</h3>
+                            <p>In 2013 I was a Front-End Web Designer for Sellers Marketing Solutions. I used mostly HTML and CSS. The company website was the first of many websites I created for the company. Though they are no longer in business, the former owner, Justin Sellers, has allowed me use this on my portfolio site. </p>
+                        </div>
+    
+                        <div class="website-preview">
+                            <img src="img/sms-thumb.jpg" alt="Screenshot of Sellers Marketing Solutions Website">
+                            <a href="sample_website/sellers_webpage/index.html" target="_blank">Click here to see the live site</a>
+                        </div>
+                        
+                    </section>
+
+                    <section id="wcf2015">
+    
+                        <div class="website-info">
+                            <h3>World Children's Festival 2015 Website</h3>
+                            <p>This is a website I developed while I was in school at the Art Institute of Atlanta. While it is a non-traditional and dated website, it shows my ability to think differently and develop websites that are creative, interesting, and not just a bunch of stacked boxes.</p>
+                        </div>
+    
+                        <div class="website-preview">
+                            <img src="img/wcf2015-thumb.jpg" alt="Screenshot of Student Website">
+                            <a href="sample_website/wcf2015/index.html" target="_blank">Click here to see the live site</a>
+                        </div>
+                        
+                    </section>
+
+                </section>
+
+
+            </section>
+
+        </article>
+
+        <article>
+
+            <div class="contact-bg">
+                <div id="contact">
+
+                    <div id="form-wrapper">
+
+                        <section class="contact-title">
+                            <h2>Contact Me</h2>
+                        </section>
+                        <form name='form' method='POST' action='php/contactscript.php'>
+
+                                    <p><label for="name">Name</label></p>
+                                    <p><input type="text" tabindex="1" id="name" name="name" placeholder="Name" pattern="^([a-zA-Z ])[a-zA-Z_- ]*[\w_-]*[\S]$|^([a-zA-Z])[0-9_-]*[\S]$|^[a-zA-Z]*[\S]$" title="Must be alphanumeric, start with a letter and contain no special characters other than underscores or dashes in the last name." required/></p>
+
+                                    <p><label for="email">Email</label><?php echo @$email_error; ?></p>
+                                    <p><input type="text" tabindex="2" id="email" name="email" placeholder="yourname@mail.com" pattern="^((([!#$%&'*+\-/=?^_`{|}~\w])|([!#$%&'*+\-/=?^_`{|}~\w][!#$%&'*+\-/=?^_`{|}~\.\w]{0,}[!#$%&'*+\-/=?^_`{|}~\w]))[@]\w+([-.]\w+)*\.\w+([-.]\w+)*)$" title="Please enter a valid email address" required/></p>
+
+                                    <p><label for="message">Message</label></p>
+                                    <p><textarea cols="45" rows="10" tabindex="3" id="message" name="msg" placeholder="How can I help you?" required></textarea></p>
+
+                                    <input name="Submit" tabindex="4" id="submit" type="submit" value="Submit" />
+
+                        </form>
+                    </div>
+
+            </div>
+
+            </div>
+
+        </article>
+
+        <footer>
+
+            <div>Copyright &copy 
+                    <script type="text/javascript">
+                        var d = new Date();
+                        document.write(d.getFullYear());
+                    </script> 
+                Allin Harmon</div>
+            <div class="links">
+                <p><a href="https://linkedin.com/in/allinharmon" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Button"/></a>LinkedIn</p>
+                <p><a href="https://github.com/Allin-Harmon" target="_blank"><img src="img/github.png" alt="GitHub Button"/></a>GitHub</p>
+                <p><a href="https://codepen.io/APHarmon" target="_blank"><img src="img/codepen.png" alt="CodePen Button"/></a>CodePen</p>
+                <p><a href="allin-harmon-resume.pdf" target="_blank"><img src="img/resume.png" alt="Resume Button"/></a>Resume</p>
+                <p><a href="sample_website/design_portfolio/index.html" target="_blank"><img src="img/portfolio.png" alt="Design Portfolio Button"/></a>Design</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+</body>
+</html>

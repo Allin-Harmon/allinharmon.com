@@ -1,0 +1,513 @@
+<?php
+
+	// * IMPORTANT * Set your email information here
+	define('DESTINATION_EMAIL','justin@sellersmarketingsolutions.com');
+	define('MESSAGE_SUBJECT','Contact Us from sellersms.com');
+	define('REPLY_TO', 'justin@sellersmarketingsolutions.com');
+	define('FROM_ADDRESS', 'justin@sellersmarketingsolutions.com');
+	define('REDIRECT_URL', 'http://www.sellersms.com');
+
+	require_once('inc/validation.php');
+
+?>
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sellers Marketing Solutions</title>
+	<meta name="description" content="Augusta, North Augusta, Aiken, CSRA, Web Design, Graphic Design, Advertising, Marketing, Commercials, Website, Sellers">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=1204px" />
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+$(function(){
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
+	var mw = 480; // min width of site
+	var ratio =  ww / mw; //calculate ratio
+	if( ww < mw){ //smaller than minimum size
+		$('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
+	}else{ //regular size
+		$('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+	}
+}
+});
+</script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper-container">
+	<div class="wrapper">
+
+		<div class="top-header">
+
+			<div class="logo">
+				<a href="http://www.sellersms.com/"><img src="images/sellers-logo.png" alt="Sellers Marketing Solutions Logo" /></a>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#work">Our Work</a></li>
+					<li><a href="#mission">Our Mission</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#team">Our Team</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<div class="bottom-header">
+
+			<div class="logo-bg"></div>
+
+			<div class="nav-bg"></div>
+
+		</div>
+
+		<div class="header-space"></div>
+
+		<section id="work">
+
+			<div class="work">
+
+				<div class="main-title">
+					<h2>OUR WORK</h2>
+				</div>
+				<div class="main-title-bg"></div>
+
+
+				<div class="slider-main">
+					<div class="inner-shadow">
+						<div class="upper-shadow"></div>
+
+							<div class="slider">
+								<div class="slider-wrapper theme-default">
+						            <div id="slider" class="nivoSlider">
+						                <img src="images/slider/img1.jpg" data-thumb="images/slider/img1.jpg" alt="ROLC Aiken Picture" data-transition="slideInRight" />
+						                <img src="images/slider/img2.jpg" data-thumb="images/slider/img2.jpg" alt="Gopher Tech Picture" data-transition="slideInRight" />
+						                <img src="images/slider/img3.jpg" data-thumb="images/slider/img3.jpg" alt="WFC5 Picture" data-transition="slideInRight" />
+						                <img src="images/slider/img4.jpg" data-thumb="images/slider/img4.jpg" alt="Nacho Mamas Picture" data-transition="slideInRight" />
+						                <img src="images/slider/img5.jpg" data-thumb="images/slider/img5.jpg" alt="Seeds 'n' Such Picture" data-transition="slideInRight" />
+						            </div>
+					         	</div>
+					       </div>
+
+						<div class="lower-shadow"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="mission">
+
+			<div class="mission">
+
+				<div class="main-title">
+					<h2>OUR MISSION</h2>
+				</div>
+				<div class="main-title-bg"></div>
+
+				<div class="content-container">
+
+					<div class="content-title proudly-serving">
+						<h3>Proudly Serving the CSRA</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="content">
+						<img src="images/svcs-banner.png" alt="City Banner" class="city-banner" />
+						<p>Sellers Marketing Solutions is your one stop shop for your Marketing and Web development needs! We provide a multitude of solutions based solely upon your business requirements. We specialize in anything from web site development and Ecommerce solutions to radio and television advertising. We also service the smaller end of marketing including Brochure, Business Card, Pen Labeling, and screen printing development.</p>
+					</div>
+
+				</div>
+
+				<div class="content-container">
+
+					<div class="content-title a-spoonful">
+						<h3>A Spoonful of Marketing</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="content">
+						<p>Marketing truly does help the medicine go down a little easier! Marketing is the perfect way to get your name out there and helps drive your customers towards your store. Be the star of the industry with our customer streamlined marketing solutions. We will provide you with the best customer care known to man, including your very own, personal sales representative! Never deal with multiple people again. We will find the best avenue of approach for any marketing campaign you can imagine.</p>
+					</div>
+
+				</div>
+
+				<div class="content-container">
+
+					<div class="content-title dont-get">
+						<h3>Don’t Get Left Behind!</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="content">
+						<p>The overwhelming feeling of your business leaving you behind is a scary thing; however, you will never experience that with Sellers Marketing Solutions. We not only provide you with the actual marketing solution itself; we also provide you with a BEGINNING TO END SOLUTION. Take Ecommerce for example. We will supply personnel to take photos and enter product descriptions, keep track of inventory, provide you with reports, AND buy the shipping boxes. With SMS, you're covered.</p>
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+		<section id="services">
+
+			<div class="services">
+
+				<div class="main-title">
+					<h2>SERVICES</h2>
+				</div>
+				<div class="main-title-bg"></div>
+
+				<div class="content-container">
+
+					<div class="content-title weve-got">
+						<h3>We've Got It Covered</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="content">
+						<p>Marketing is a world full of different techniques, skillsets, hurdles, challenges, and RATES. Each marketing campaign requires that you deal with a different company. This requires time and means that you, the business owner, must take the time to explain to each supplier exactly what you are looking for. Sellers Marketing Solutions has taken these burdens off of you, allowing you to focus on the one thing that matters, your business.</p>
+
+						<p>We have pre negotiated rates with over 100 different companies. We can get you anything from a personalized coffee cup to a commercial during the super bowl at an extremely discounted rate.</p>
+
+						<p>We provide you with the most complete and up to date marketing package known to man. These services are completely scalable to your needs.</p>
+
+						<p>Our services include, but are not limited to:</p>
+
+						<ul>
+							<li>Website Design</li>
+							<li>Ecommerce Solutions</li>
+							<li>Worry &amp; Hassle Free Setup.</li>
+							<li>Personalized Email Accounts</li>
+							<li>Newspaper Advertising</li>
+							<li>Television Advertising</li>
+							<li>Theater Advertising</li>
+							<li>Radio Advertising</li>
+							<li>Web Advertising</li>
+							<li>Billboard Advertising</li>
+							<li>Human Marketing (street sign wavers)</li>
+							<li>Event Ticket Advertising</li>
+							<li>Magazine Advertising</li>
+							<li>Bowling Alley Advertising</li>
+							<li>Event Banner Advertising</li>
+							<li>Facebook Build and Monitoring</li>
+							<li>Twitter Build and Monitoring</li>
+							<li>Mailing List</li>
+							<li>Email Newsletters</li>
+							<li>Market Address list (mass mail)</li>
+							<li>Promotional Items</li>
+							<li>Business Card Design</li>
+							<li>Gift Certificate (Internet &amp; Store)</li>
+							<li>Promotional Codes</li>
+							<li>PayPal Manager accounting</li>
+							<li>Mobile Phone Credit Swiping</li>
+							<li>Flyers and Banners</li>
+							<li>WORD OF MOUTH</li>
+						</ul>
+
+						<div class="services-pic-container">
+							<div class="web-image"></div>
+							<div class="print-image"></div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="team">
+
+			<div class="team">
+
+				<div class="main-title">
+					<h2>Our Team</h2>
+				</div>
+				<div class="main-title-bg"></div>
+
+				<div class="content-container">
+
+					<div class="content-title sales-department">
+						<h3>Sales Department</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="profile-content">
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/justin-sellers.jpg" alt="Justin Sellers Photo" /></div>
+							<h3>Justin Sellers</h3>
+							<p><span>CEO, Founder</span></p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:justin@sellersms.com" class="email" title="Email justin@sellersms.com">Justin's Email</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/jordan-chambliss.jpg" alt="Jordan Chambliss Photo" /></div>
+							<h3>Jordan Chambliss</h3>
+							<p><span>Multi-Media Account Executive</span></p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:j.chambilss@sellersms.com" class="email" title="Email j.chambilss@sellersms.com">Jordan's Email</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/john-fischer.jpg" alt="John Fischer Photo" /></div>
+							<h3>John A. Fischer</h3>
+							<p><span>Multi-Media Account Executive</span></p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:j.fischer@sellersms.com" class="email" title="Email j.fischer@sellersms.com">John's Email</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/mathis-elow.jpg" alt="Mathis Elow Photo" /></div>
+							<h3>Mathis Elow</h3>
+							<p><span>Multi-Media Account Executive</span></p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:m.elow@sellersms.com" class="email" title="Email m.elow@sellersms.com">Mathis' Email</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="clear"></div><!--copy from .profile-content to make a new row of profiles============================================================-->
+
+					<div class="content-title creative-department">
+						<h3>Creative Department</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="profile-content">
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/austin-ross.jpg" alt="Austin Ross Photo" /></div>
+							<h3>Austin Ross</h3>
+							<p><span>Lead Programer</span></p>
+							<p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:austin@sellersms.com" class="email" title="Email austin@sellersms.com">Austin's Email</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/allin-harmon.jpg" alt="Allin Harmon Photo" /></div>
+							<h3>Allin Harmon</h3>
+							<p><span>Graphic &amp; Web Designer</span></p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:allin@sellersms.com" class="email" title="Email allin@sellersms.com">Allin's Email</a></li>
+									<li><a href="http://www.linkedin.com/in/allinharmon" class="linked-in" title="Allin's Linked In Page" target="_blank">Allin's Linked In</a></li>
+									<li><a href="http://www.allinharmon.com/" class="aph-portfolio" title="Allin's Portfolio" target="_blank">APH Portfolio</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="profile">
+
+							<div class="profile-shadow"></div>
+							<div class="profile-photo"><img src="images/jim-harmon.jpg" alt="Jim Harmon Photo" /></div>
+							<h3>Jim Harmon</h3>
+							<p><span>Word Press, SEO, Content Development</span></p>
+
+							<div class="social-info">
+								<ul>
+									<li><a href="mailto:jim@sellersms.com" class="email" title="Email jim@sellersms.com">Jim's Email</a></li>
+									<li><a href="http://www.linkedin.com/in/jimdharmon" class="linked-in" title="Jim's Linked In Page" target="_blank">Jim's Linked In</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="clear"></div><!--copy from .profile-content to make a new row of profiles============================================================-->
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="contact">
+
+			<div class="contact">
+
+				<div class="main-title">
+					<h2>Contact Us</h2>
+				</div>
+				<div class="main-title-bg"></div>
+
+				<div class="content-container">
+
+					<div class="content-title how-can-we">
+						<h3>How Can We Help...</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="content">
+
+						<form id="contact-form" action="#" method="#">
+
+				            <fieldset>
+
+					            <div class="column1">
+					              <p>
+					                <label for="company">Company Name</label>
+					                <input type="text" id="company" name="company" placeholder="First and Last Name" value="<?php echo @$company ?>" />
+					              </p>
+
+					              <p>
+					                <label for="name">Full Name</label>
+					                <input type="text" id="name" name="name" placeholder="First and Last Name" value="<?php echo @$name ?>" class="name required" />
+					              </p>
+
+					              <p>
+					                <label for="message">Comments</label>
+					                <textarea id="message" name="message" placeholder="How can we help...?"  value="<?php echo @$message ?>" class="required"><?php echo @$message ?></textarea>
+					              </p>
+					            </div>
+
+					            <div class="column2">
+
+					              <p>
+					                <label for="email">Email Address</label>
+					                <input type="text" id="email" name="email" placeholder="Example: yourname@gmail.com" value="<?php echo @$email ?>" class="e-mail required" />
+					              </p>
+
+					              <p>
+					                <label for="phone">Phone Number</label>
+					                <input type="text" id="phone" name="phone" placeholder="Example: (555)555-5555" value="<?php echo @$phone ?>" />
+					              </p>
+					              <label>Sorry About This</label>
+					              <div class="reCaptcha">ReCaptcha Goes Here<input name="submitted" id="submit" type="submit" value="Send" /></div>
+
+					            </div>
+
+				            </fieldset>
+
+				        </form>
+
+					</div>
+
+				</div>
+
+				<div class="content-container-map">
+
+					<div class="content-title directions">
+						<h3>Map &amp; Directions</h3>
+					</div>
+					<div class="content-title-bg"></div>
+
+					<div class="map-container">
+						<div class="inner-shadow">
+							<div class="upper-shadow"></div>
+							<iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Sellers+Marketing+Solutions&amp;aq=&amp;sll=33.531271,-81.935863&amp;sspn=0.016009,0.033023&amp;ie=UTF8&amp;hq=Sellers+Marketing+Solutions&amp;hnear=&amp;t=m&amp;cid=2880179554765472122&amp;ll=33.540894,-81.938438&amp;spn=0.025039,0.036564&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+							<div class="lower-shadow"></div>
+						</div>
+
+						<div class="get-directions">
+							<small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=509+Belvedere-Clearwater+Road,+Belvedere,+SC&amp;aq=&amp;sll=33.530364,-81.938483&amp;sspn=0.008004,0.016512&amp;ie=UTF8&amp;hq=&amp;hnear=509+Belvedere-Clearwater+Rd,+Belvedere,+Aiken,+South+Carolina+29841&amp;t=m&amp;ll=33.537531,-81.94994&amp;spn=0.021963,0.09038&amp;z=14&amp;iwloc=A">Get Directions</a></small>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</div>
+
+<footer>
+
+	<p><strong>&copy; Sellers Marketing Solutions, LLC 2013. All Rights Reserved.</strong></p>
+	<p><em>509 Belvedere-Clearwater Rd Belvedere, SC 29841</em></p>
+	<p>Main Office Number: (803) 335-8065</p>
+
+</footer>
+
+    <script type="text/javascript">
+		$(window).load(function() {
+		    $('#slider').nivoSlider({
+		        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+		        slices: 15, // For slice animations
+		        boxCols: 8, // For box animations
+		        boxRows: 4, // For box animations
+		        animSpeed: 500, // Slide transition speed
+		        pauseTime: 5000, // How long each slide will show
+		        startSlide: 0, // Set starting Slide (0 index)
+		        directionNav: true, // Next & Prev navigation
+		        controlNav: true, // 1,2,3... navigation
+		        controlNavThumbs: false, // Use thumbnails for Control Nav
+		        pauseOnHover: true, // Stop animation while hovering
+		        manualAdvance: false, // Force manual transitions
+		        prevText: 'Prev', // Prev directionNav text
+		        nextText: 'Next', // Next directionNav text
+		        randomStart: true, // Start on a random slide
+		        beforeChange: function(){}, // Triggers before a slide transition
+		        afterChange: function(){}, // Triggers after a slide transition
+		        slideshowEnd: function(){}, // Triggers after all slides have been shown
+		        lastSlide: function(){}, // Triggers when last slide is shown
+		        afterLoad: function(){} // Triggers when slider has loaded
+		    });
+		});
+	</script>
+
+</body>
+</html>
